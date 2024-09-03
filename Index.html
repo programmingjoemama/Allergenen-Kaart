@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allergenenkaart</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <a href="index.html"><img src="Assets/Logo-Hebberd-zwart.svg" alt="Hebberd Logo" ></a>
+            <p>Allergenenkaart</p>
+            <div class="underline-img"><img src="Assets/Untitled design.svg" width="100%"></div>
+        </div>
+
+            <div class="filter">
+                <p class="vraag" style=" font-size: 4vw; padding-bottom: 1%; margin-top: 5%;">Ik ben allergisch voor:</p>
+                <button class="btn-filter" data-filter="Gluten"><img src="Assets/Iconen allergenen/Gluten.svg" alt="Gluten"><p>Gluten</p></button>
+                <button class="btn-filter" data-filter="Melk"><img src="Assets/Iconen allergenen/Lactose.svg" alt="Melk"><p>Melk</p></button>
+                <button class="btn-filter" data-filter="Ei"><img src="Assets/Iconen allergenen/egg.svg" alt="Ei"><p>Ei</p></button>
+                <button class="btn-filter" data-filter="Lupine"><img src="Assets/Iconen allergenen/lupine.svg" alt="Lupine"><p>Lupine</p></button>
+                <button class="btn-filter" data-filter="Noten"><img src="Assets/Iconen allergenen/Noten.svg" alt="Noten"><p>Noten</p></button>
+                <button class="btn-filter" data-filter="Pindas"><img src="Assets/Iconen allergenen/pindas.svg" alt="Pindas"><p>Pinda's</p></button>
+                <button class="btn-filter" data-filter="Sesamzaad"><img src="Assets/Iconen allergenen/Sesamzaad.svg" alt="Sesamzaad"><p>Sesamzaad</p></button>
+            <button class="btn-filter" data-filter="Zwaveldioxide"><img src="Assets/Iconen allergenen/zwaveldioxide.svg" alt="Zwaveldioxide"><p>Zwaveldioxide</p></button>
+            <button class="btn-filter" data-filter="Selderij"><img src="Assets/Iconen allergenen/celery.svg" alt="Selderij"><p>Selderij</p></button>
+            <button class="btn-filter" data-filter="Mosterd"><img src="Assets/Iconen allergenen/Mosterd.svg" alt="Mosterd"><p>Mosterd</p></button>
+            <button class="btn-filter" data-filter="Vis"><img src="Assets/Iconen allergenen/Vis.svg" alt="Vis"><p>Vis</p></button>
+            <button class="btn-filter" data-filter="Soja"><img src="Assets/Iconen allergenen/soya.svg" alt="Soja"><p>Soja</p></button>
+            <button class="btn-filter" data-filter="Weekdieren"><img src="Assets/Iconen allergenen/weekdieren.svg" alt="Weekdieren"><p>Weekdieren</p></button>
+            <button class="btn-filter" data-filter="Schaaldieren"><img src="Assets/Iconen allergenen/Schaaldieren.svg" alt="Schaaldieren"><p>Schaaldieren</p></button>
+        
+        </div>
+        <div class="gerechten" id="lunch-gerechten">
+            <div class="titel">
+                <p>Liefhebberdjes</p>
+                <img src="Assets/Untitled design.svg" width="100%">
+            </div>
+            <div class="filterDiv Ei Lupine Melk Mosterd Soja Sesamzaad Vis">
+                <div class="gerecht"><p>Liflafjes</p></div>
+                <p style="margin-top: 0;">Onze specialiteit! Een heerlijke lunchgerecht bestaande uit meerdere kleine gerechtjes van onze kaart. <br>Van alles Wat!<br></p>
+            </div>
+            <div class="filterDiv Sesamzaad">
+                <div class="gerecht"><p>Broodje Kiep</p></div>
+                <p style="margin-top: 0;">Een rijk belegd broodje met o.a. gemarineerde kippenreepjes, ananas, cashewnoten en chilimayonaise.</p>
+            </div>
+            <div class="filterDiv Melk">
+                <div class="gerecht"><p>Tosti de Hebberd</p></div>
+                <p style="margin-top: 0;">Tosti met gerookte kip, oude kaas, sambal, geserveerd met frites en cocktailsaus.</p>
+            </div>
+            <div class="filterDiv ">
+                <div class="gerecht"><p>Broodje van de Maand</p></div>
+                <p style="margin-top: 0;">Een wisselend broodje ontstaan in het creatieve brein van onze koks.</p>
+            </div>
+
+                <div class="titel">
+                    <p>Belegde Broodjes</p>
+                    <img src="Assets/Untitled design.svg" width="100%">
+                </div>
+
+            <div class="filterDiv Vis">
+                <div class="gerecht"><p>Avocado Zalm</p></div>
+                <p style="margin-top: 0;">Toast met avocadocrème, gerookte zalm en een gekookt eitje.</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Sandwich de Hebberd</p></div>
+                <p style="margin-top: 0;">Toast met o.a. gerookte kip, oude kaas, bacon, ei en cocktailsaus.</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Carpaccio de Hebberd</p></div>
+                <p style="margin-top: 0;">Carpaccio van rundvlees met o.a. Permezaanse kaas, zongedroogde tomaat en keuze uit truffel- of pestomayonaise. </p>
+            </div>
+            <div class="filterDiv Selderij">
+                <div class="gerecht"><p>Knolselderij Carpaccio</p></div>
+                <p style="margin-top: 0;">Carpaccio van knolselderij net o.a. Permezaanse kaas, zongedroogde tomaat en keuze uit truffel- of pestomayonaise. </p>
+            </div>
+            <div class="filterDiv Ei Melk Mosterd Vis">
+                <div class="gerecht"><p>Tonijnsalade</p></div>
+                <p style="margin-top: 0;">Huisgemaakte Tonijnsalade met o.a. sla, komkommer en rucola</p>
+            </div>
+            <div class="filterDiv Soja Zwaveldioxide">
+                <div class="gerecht"><p>Pulled Chicken</p></div>
+                <p style="margin-top: 0;">Langzaam gegaarde kip met o.a. atjar, paprika en zoetzure komkommer.</p>
+            </div>
+            <div class="filterDiv Melk">
+                <div class="gerecht"><p>Gesmolten Toestand</p></div>
+                <p style="margin-top: 0;">Gesmolten brie met o.a. honing, walnoten en tomatentapanade.</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Warmvlees</p></div>
+                <p style="margin-top: 0;">Warmvlees gebakken met champignons en ui, satésaus en een gebakken ei.</p>
+            </div>
+            
+            <div class="titel">
+                <p>Salades</p>
+                <img src="Assets/Untitled design.svg" width="100%">
+            </div>
+            <div class="filterDiv Soja">
+                <div class="gerecht"><p>Kip</p></div>
+                <p style="margin-top: 0;">Salade geserveerd met o.a. oosters gebakken kippenreepjes, ananas en cashewnoten.</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Carpaccio</p></div>
+                <p style="margin-top: 0;">Carpaccio salade met o.a. Parmezaanse kaas, zongedroogde tomaat en keuze uit truffel- of pestomayonaise </p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Knolselderij Carpaccio</p></div>
+                <p style="margin-top: 0;">Knolselderij carpaccio salade met o.a. Parmezaanse kaas, zongedroogde tomaat en keuze uit truffel- of pestomayonaise </p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Geitenkaas</p></div>
+                <p style="margin-top: 0;">Salade geserveerd met o.a. lauwwarme geitenkaas, honing en krokante bacon </p>
+            </div>
+            <div class="filterDiv Vis">
+                <div class="gerecht"><p>Vis</p></div>
+                <p style="margin-top: 0;">Salade geserveerd met o.a. gerookte zalm, rivierkreeftjes en tonijnsalade </p>
+            </div>
+
+            <div class="titel">
+                <p>Ei-Gerechten</p>
+                <img src="Assets/Untitled design.svg" width="100%">
+            </div>
+            <div class="titel1">
+                <p>Uitsmijters</p>
+            </div>
+
+            <div class="filterDiv Ei">
+                <div class="gerecht"><p>De Hebberd</p></div>
+                <p style="margin-top: 0;">Drie spiegeleieren met gerookte kip, oude kaas, tomaat, sjalot en oregano | 11</p>
+            </div>
+            <div class="filterDiv Ei Melk">
+                <div class="gerecht"><p>Kaas</p></div>
+                <p style="margin-top: 0;">Drie spiegeleieren met kaas | 9.5</p>
+            </div>
+            <div class="filterDiv Ei">
+                <div class="gerecht"><p>Ham of Spek</p></div>
+                <p style="margin-top: 0;">Drie spiegeleieren met ham of spek | 9.5</p>
+            </div>
+            <div class="filterDiv Ei Melk">
+                <div class="gerecht"><p>Ham of Spek en Kaas</p></div>
+                <p style="margin-top: 0;">Drie spiegeleieren met ham of spek en kaas | 10</p>
+            </div>
+
+            <div class="titel1">
+                <p>Omeletten</p>
+            </div>
+            <div class="filterDiv Melk Selderij">
+                <div class="gerecht"><p>De Hebberd</p></div>
+                <p style="margin-top: 0;">Royaal gevulde omelet met o.a. kaas, champignons, paprika en spekjes | 11.5</p>
+            </div>
+            <div class="filterDiv Melk Selderij">
+                <div class="gerecht"><p>Kaas</p></div>
+                <p style="margin-top: 0;">Omelet met kaas | 10</p>
+            </div>
+            <div class="filterDiv Melk Selderij">
+                <div class="gerecht"><p>Ham of Spek</p></div>
+                <p style="margin-top: 0;">Omelet met ham of spek | 10</p>
+            </div>
+            <div class="filterDiv Melk Selderij">
+                <div class="gerecht"><p>Ham of Spek en Kaas</p></div>
+                <p style="margin-top: 0;">Omelet met ham of spek en kaas | 10.5</p>
+            </div>
+
+            <div class="titel">
+                <p>Burgers</p>
+                <img src="Assets/Untitled design.svg" width="100%">
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Hamburger</p></div>
+                <p style="margin-top: 0;">Black Angus burger op een brioche met o.a. Emmentaler kaas, bacon, uienringen en barbecuesaus | 15</p>
+            </div>
+            <div class="filterDiv Gluten Selderij">
+                <div class="gerecht"><p>Kipburger</p></div>
+                <p style="margin-top: 0;">Kipburger geserveerd op een brioche met o.a. guacamole, chilimayonaise, jalapeño, Emmentaler kaas en nachos | 13.5</p>
+            </div>
+<!--vanaf hier tot voorgerecht nog doen!-->
+            <div class="titel">
+                <p>Tosti's</p>
+                <img src="Assets/Untitled design.svg" width="100%">
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Ham en/of Kaas</p></div>
+                <p style="margin-top: 0;">Tosti geserveerd met curry | 6</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Tuna Melt</p></div>
+                <p style="margin-top: 0;">Tosti met huisgemaakte tonijnsalade, kaas en chilimayonaise | 8.5</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Brie</p></div>
+                <p style="margin-top: 0;">Tosti met brie, tomaat, tapenade en pestomayonaise | 7.5</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Tosti de Hebberd</p></div>
+                <p style="margin-top: 0;">Tosti met gerookte kip, oude kaas, sambal, sjalot en frites met cocktailsaus | 9.5</p>
+            </div>
+
+            <div class="titel">
+                <p>Kroketten</p>
+                <img src="Assets/Untitled design.svg" width="100%">
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Rundvlees</p></div>
+                <p style="margin-top: 0;">Twee rundvlees kroketten van de Bourgondiër met frites of brood | 9.5</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Groente</p></div>
+                <p style="margin-top: 0;">Twee groente kroketten geserveerd met frites of brood | 9.5</p>
+            </div>
+
+            <div class="titel">
+                <p>Soepen</p>
+                <img src="Assets/Untitled design.svg" width="100%">
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Chinese Tomatensoep</p></div>
+                <p style="margin-top: 0;">Huisgemaakte Chinese tomatensoep, geserveerd met soepstengels | 6.5</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Opa's Kerriesoep</p></div>
+                <p style="margin-top: 0;">Opa's geheime recept | 7.5</p>
+            </div>
+
+            <div class="titel">
+                <p>Bordje Vol</p>
+                <img src="Assets/Untitled design.svg" width="100%">
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Kipsaté</p></div>
+                <p style="margin-top: 0;">Kippendijsaté geserveerd met o.a. satésaus, frites, atjar en zoetzure komkommer | 18.5</p>
+            </div>
+
+        </div>
+        <div class="gerechten" id="dinner-gerechten">
+
+            <div class="titel">
+                <p>Voorgerechten</p>
+                <img src="Assets/Untitled design.svg" width="100%">
+            </div>
+            <div class="filterDiv Selderij">
+                <div class="gerecht"><p>Chinese Tomatensoep</p></div>
+                <p style="margin-top: 0;">Huisgemaakte Chinese tomatensoep, geserveerd met soepstengels | 6.5</p>
+            </div>
+            <div class="filterDiv Soja">
+                <div class="gerecht"><p>Yin & Yang</p></div>
+                <p style="margin-top: 0;">Oosters gebakken kippendijreepjes met o.a. een tortillakrokantje, paprika en ananas | 11.5</p>
+            </div>
+            <div class="filterDiv Melk">
+                <div class="gerecht"><p>Opa's Kerriesoep</p></div>
+                <p style="margin-top: 0;">Opa's geheime recept | 7.5</p>
+            </div>
+            <div class="filterDiv Melk">
+                <div class="gerecht"><p>Gevulde Kabouterhuisjes</p></div>
+                <p style="margin-top: 0;">Kastanjechampignons met o.a. bieslook-roomkaas en Grana Padano | 10.5</p>
+            </div>
+            <div class="filterDiv ">
+                <div class="gerecht"><p>Carpaccio de Hebberd</p></div>
+                <p style="margin-top: 0;">Carpaccio van rundvlees met o.a. Parmezaanse kaas, zongedroogde tomaat en keuze uit truffel- of pestomayonaise | 12</p>
+            </div>
+            <div class="filterDiv Schaaldieren Soja">
+                <div class="gerecht"><p>De Gamba Bijeenkomst</p></div>
+                <p style="margin-top: 0;">Gamba's uit de oven met o.a. citroen, chilipeper, knoflook en toast | 12</p>
+            </div>
+            <div class="filterDiv Selderij">
+                <div class="gerecht"><p>Knoltsgekke Carpaccio</p></div>
+                <p style="margin-top: 0;">Carpaccio van knolselderij met o.a. Parmezaanse kaas, zongedroogde tomaat en keuze uit truffel- of pestomayonaise | 10</p>
+            </div>
+            <div class="filterDiv ">
+                <div class="gerecht"><p>Breekbroodje</p></div>
+                <p style="margin-top: 0;">Warm broodje met kruidenboter, aioli en pesto-kaasdip | v.α. 6.5</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Nachos to Share</p></div>
+                <p style="margin-top: 0;">Met o.a. pulled chicken, kaas, guacamole, crème fraîche en chilimayonaise | 12</p>
+            </div>
+
+            <div class="titel">
+                <p>Hoofdgerechten</p>
+                <img src="Assets/Untitled design.svg" width="100%">
+            </div>
+            <div class="filterDiv lupine Ei Vis">
+                <div class="gerecht"><p>Knabbeljauw</p></div>
+                <p style="margin-top: 0;">Op de huid gebakken kabeljauw met o.a. tagliatelle in beurre blanc saus | 24.5</p>
+            </div>
+            <div class="filterDiv lupine Ei Melk">
+                <div class="gerecht"><p>Truffelpasta</p></div>
+                <p style="margin-top: 0;">Tagliatelle met o.a. romige truffelsaus en paddenstoelenmix | 19</p>
+            </div>
+            <div class="filterDiv Vis">
+                <div class="gerecht"><p>Zalm Je 'm Hebben</p></div>
+                <p style="margin-top: 0;">In rode biet gemarineerde zalm met o.a. gegrilde asperges en citruscrème | 24</p>
+            </div>
+            <div class="filterDiv Melk Soja">
+                <div class="gerecht"><p>Risotto</p></div>
+                <p style="margin-top: 0;">Paprikarisotto met groene asperges, Grana Padano en paddenstoelen | 19.5</p>
+            </div>
+            <div class="filterDiv Soja">
+                <div class="gerecht"><p>Kluivertjes</p></div>
+                <p style="margin-top: 0;">600 gram van Barnevelds beroemdste spareribs met knoflook- en chilisaus | 20</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Ingewikkeld Hè</p></div>
+                <p style="margin-top: 0;">Ossenhaas medaillons omwikkeld met spek, met wokgroenten en Stroganoffsaus | 26.5</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>'t Haasje Zijn</p></div>
+                <p style="margin-top: 0;">Varkenshaas uit de oven met o.a. brie, cranberrysaus en groene asperges | 22</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Kip op Stok</p></div>
+                <p style="margin-top: 0;">Kippendijsaté met o.a. satésaus, cassave en mini loempia's | 20</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Ingeburgerd</p></div>
+                <p style="margin-top: 0;">Black Angus burger met o.a. Emmentaler kaas, bacon, uienringen en barbecuesaus | 19</p>
+            </div>
+            <div class="filterDiv Lupine Selderij">
+                <div class="gerecht"><p>Kip'nBurger</p></div>
+                <p style="margin-top: 0;">Kipburger met o.a. guacamole, jalapeño, chilimayonaise, Emmentaler kaas en nachos | 17.5</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Tourneledokie</p></div>
+                <p style="margin-top: 0;">200 gram gebakken tournedos met wokgroenten en jus de veau | 29</p>
+            </div>
+            <div class="filterDiv Soja">
+                <div class="gerecht"><p>Kenniekieze</p></div>
+                <p style="margin-top: 0;">Mixed grill met ossenhaas medaillon met spek, kippendij, sparerib, wokgroenten en chili- en knoflooksaus | 27.5</p>
+            </div>
+            <div class="filterDiv Ei Lupine">
+                <div class="gerecht"><p>Dat Wordt Lappen</p></div>
+                <p style="margin-top: 0;">XL-schnitzel met gevulde champignon-roomsaus | 20</p>
+            </div>
+            <div class="filterDiv Selderij Soja">
+                <div class="gerecht"><p>Vlinders in de Buik</p></div>
+                <p style="margin-top: 0;">Zoetpittige gevlinderde kip met o.a. chilisaus en salade | 23.5</p>
+            </div>
+
+            <div class="titel">
+                <p>Maaltijdsalades</p>
+                <img src="Assets/Untitled design.svg" width="100%">
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Geitenkaas</p></div>
+                <p style="margin-top: 0;">Salade geserveerd met o.a. lauwwarme geitenkaas, honing en krokante bacon | 15</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Carpaccio</p></div>
+                <p style="margin-top: 0;">Carpaccio salade met o.a. Parmezaanse kaas, zongedroogde tomaat en keuze uit truffel- of pestomayonaise | 15.5</p>
+            </div>
+            <div class="filterDiv Vis">
+                <div class="gerecht"><p>Vis</p></div>
+                <p style="margin-top: 0;">Salade geserveerd met o.a. gerookte zalm, rivierkreeftjes en tonijnsalade | 17</p>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Knolselderij Carpaccio</p></div>
+                <p style="margin-top: 0;">Knolselderij carpaccio salade met o.a. Parmezaanse kaas, zongedroogde tomaat en keuze uit truffel- of pestomayonaise | 14.5</p>
+            </div>
+            <div class="filterDiv Soja">
+                <div class="gerecht"><p>Kip</p></div>
+                <p style="margin-top: 0;">Salade geserveerd met o.a. oosters gebakken kippendijreepjes, ananas en cashewnoten | 15.5</p>
+            </div>
+
+            <div class="titel">
+                <p>Nagerechten</p>
+                <img src="Assets/Untitled design.svg" width="100%">
+            </div>
+            <div class="filterDiv Melk">
+                <div class="gerecht"><p>Dame Blanche</p></div>
+                <p style="margin-top: 0;">Drie bollen vanille-ijs met chocoladesaus, brownie en slagroom | 8</p>
+            </div>
+            <div class="filterDiv Lupine Melk Ei">
+                <div class="gerecht"><p>Tiramisu</p></div>
+                <p style="margin-top: 0;">De Italiaanse klassieker met o.a. mascarpone, lange vingers en amaretto | 9</p>
+            </div>
+            <div class="filterDiv ">
+                <div class="gerecht"><p>Zomerse Sorbet</p></div>
+                <p style="margin-top: 0;">Vers fruit, ananassap, twee bollen sorbetijs en slagroom | 9.5</p>
+            </div>
+            <div class="filterDiv Lupine Melk">
+                <div class="gerecht"><p>Apfelstrudel</p></div>
+                <p style="margin-top: 0;">Warme apfelstrudel met vanillesaus, vanille-ijs en slagroom | 8.5</p>
+            </div>
+            <div class="filterDiv Lupine Melk">
+                <div class="gerecht"><p>Cheesecake</p></div>
+                <p style="margin-top: 0;">Wisselende cheesecake met een bolletje ijs en slagroom | 8.5</p>
+            </div>
+            <div class="filterDiv Lupine Melk Noten">
+                <div class="gerecht"><p>Perzik Crumble</p></div>
+                <p style="margin-top: 0;">Taartje uit de oven van perzik, vlierbloesem, crumbledeeg en amandelen | 9</p>
+            </div>
+            <div class="filterDiv Ei Melk">
+                <div class="gerecht"><p>Crème Brûlée</p></div>
+                <p style="margin-top: 0;">Custard met een gekarameliseerde suikerlaag en een bolletje ijs | 9</p>
+            </div>
+        
+        </div>
+        <div class="gerechten" id="dinner-gerechten">
+            <div class="titel">
+                <p>Borrelhapjes</p>
+                <img src="Assets/Untitled design.svg" width="100%">
+            </div>
+            <div class="filterDiv Lupine Ei Melk Selderij Sesamzaad Soja">
+                <div class="gerecht"><p>Vietnamese loempia</p></div>
+            </div>
+            <div class="filterDiv Lupine Melk Selderij">
+                <div class="gerecht"><p>Bitterballen</p></div>
+            </div>
+            <div class="filterDiv Lupine Melk">
+                <div class="gerecht"><p>Kaastengels</p></div>
+            </div>
+            <div class="filterDiv Lupine Ei Pindas Soja">
+                <div class="gerecht"><p>Kipsaté rolletjes</p></div>
+            </div>
+            <div class="filterDiv Lupine Schaaldieren">
+                <div class="gerecht"><p>Butterfly gamba’s</p></div>
+            </div>
+            <div class="filterDiv Lupine Sesamzaad Soja">
+                <div class="gerecht"><p>Mini loempia’s</p></div>
+            </div>
+            <div class="filterDiv Lupine">
+                <div class="gerecht"><p>Mini frikandellen</p></div>
+            </div>
+            <div class="filterDiv Lupine Melk Ei Pindas Schaaldieren Selderij Sesamzaad Soja">
+                <div class="gerecht"><p>Bittergarnituur</p></div>
+            </div>
+            <div class="filterDiv Lupine Melk Ei Pindas Schaaldieren Selderij Soja Sesamzaad">
+                <div class="gerecht"><p>Borrelplankje</p></div>
+            </div>
+            <div class="filterDiv ">
+                <div class="gerecht"><p>Warm brood met smeersels</p></div>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Loaded nachos</p></div>
+            </div>
+            <div class="filterDiv">
+                <div class="gerecht"><p>Puntzak friet</p></div>
+            </div>
+            <div class="filterDiv Soja">
+                <div class="gerecht"><p>Loaded fries</p></div>
+            </div>
+            <div class="filterDiv Noten Pindas">
+                <div class="gerecht"><p>Luxe notenmix</p></div>
+            </div>
+            
+        </div>
+
+
+
+    </div>
+    <script src="myScript.js">
+       
+    </script>
+</body>
+</html>
