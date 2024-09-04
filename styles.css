@@ -36,7 +36,13 @@ body {
     color: #F39C12;
 }
 
+.gerechten {
+    display: none;
+}
 
+.filterDiv {
+    display: none;
+}
 
 
 
