@@ -38,13 +38,7 @@ body {
 
 /**Filterknoppen**/
 
-.gerechten {
-    display: none;
-}
 
-.filterDiv {
-    display: none;
-}
 
 .filter {
     width: 100%;
@@ -73,6 +67,7 @@ body {
 
 button.active {
     background-color: rgb(216, 216, 216);
+    box-shadow: 2px 5px black;
 }
 
 
