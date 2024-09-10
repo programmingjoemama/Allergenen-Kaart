@@ -1,41 +1,29 @@
-    const filterButtons = document.querySelectorAll(".btn-filter");
-    const selectedAllergens = new Set(); // Set to store selected allergens
+document.addEventListener('DOMContentLoaded', function() {
+    // Get current hour
+    const currentHour = new Date().getHours();
 
-    filterButtons.forEach(button => {
-        button.addEventListener("click", function() {
-            const allergen = this.getAttribute("data-filter");
+    // Get sections
+    const lunchSection = document.getElementById('lunch-gerechten');
+    const dinnerSection = document.getElementById('dinner-gerechten');
+    const borrelSection = document.getElementById('borrel-gerechten');
 
-            if (this.classList.contains("active")) {
-                // If active, remove allergen from the set and deactivate the button
-                selectedAllergens.delete(allergen);
-                this.classList.remove("active");
-            } else {
-                // If not active, add allergen to the set and activate the button
-                selectedAllergens.add(allergen);
-                this.classList.add("active");
-            }
-
-            // Update the items displayed based on the selected allergens
-            filterSelection();
-        });
-    });
-
-    function filterSelection() {
-        const items = document.querySelectorAll(".filterDiv");
-
-        items.forEach(item => {
-            let hideItem = false;
-
-            selectedAllergens.forEach(allergen => {
-                if (item.classList.contains(allergen)) {
-                    hideItem = true; // If the item contains a selected allergen, mark it for hiding
-                }
-            });
-
-            if (hideItem) {
-                item.style.display = "none"; // Hide the item if any selected allergen is present
-            } else {
-                item.style.display = "block"; // Show the item if no selected allergens are present
-            }
-        });
+    function showDishesBasedOnTime() {
+        if (currentHour >= 11 && currentHour < 16) { // 11 AM to 4 PM
+            lunchSection.style.display = 'block';
+            dinnerSection.style.display = 'none';
+            borrelSection.style.display = 'none';
+        } else if (currentHour >= 16 && currentHour < 21) { // 4 PM to 9 PM
+            lunchSection.style.display = 'none';
+            dinnerSection.style.display = 'block';
+            borrelSection.style.display = 'none';
+        } else {
+            lunchSection.style.display = 'none';
+            dinnerSection.style.display = 'none';
+            borrelSection.style.display = 'block';
+        }
+       
     }
+
+    // Call the function immediately to display initial dishes
+    showDishesBasedOnTime();
+});
